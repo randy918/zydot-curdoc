@@ -36,14 +36,29 @@ var currentCategory;
 var currentActive;
 var navText;
 var currentSelection = 0;
+let allYears = [];
+
+const allProducts = [...zydot];
+let filteredProducts = [];
+
+var filterProduct = "All";
+
+var filterDist = "Any";
 
 const init = function () {
-  duplicateJsonArray();
+  resetFilteredProducts();
+  visualizeFilteredProducts();
 };
 
-const duplicateJsonArray = function () {
-  allProducts = [...zydot];
+const resetFilteredProducts = function () {
+  filteredProducts = allProducts.slice();
 };
+
+const filterDistributors = function () {};
+
+const whichButton = function () {};
+
+const visualizeFilteredProducts = function () {};
 
 function init2() {
   for (var i = 0; i < zydot.length; i++) {
@@ -117,6 +132,31 @@ function init2() {
     }
   }
 }
+
+//!  122521.2012    EVENT LISTENERS
+
+document.querySelector("#myRadio1").addEventListener("click", function () {
+  //todo SET ALL PRODUCTS
+  resetFilteredProducts();
+  //todo CHECK FOR DIST
+  filterDistributors();
+
+  visualizeFilteredProducts();
+});
+
+document.querySelector("#myRadio2").addEventListener("click", function () {
+  //todo SET NEW PRODUCTS
+});
+
+document.querySelector("#myRadio3").addEventListener("click", function () {
+  //todo ULTRA CLEAN PRODUCTS
+  //todo Duplicate Ultra Clean Entries
+  //todo Implement Distributor
+  resetFilteredProducts();
+  var allProducts = resetJsonArray;
+});
+
+//!  122221.2014    MAIN SEQUENCE
 
 function main() {
   init();
