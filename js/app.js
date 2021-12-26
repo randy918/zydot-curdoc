@@ -40,6 +40,8 @@ let allYears = [];
 
 const allProducts = [...zydot];
 let filteredProducts = [];
+let filteredProductsL1 = [];
+let filteredProductsL2 = [];
 
 var filterProduct = "All";
 
@@ -52,6 +54,8 @@ const init = function () {
 
 const resetFilteredProducts = function () {
   filteredProducts = allProducts.slice();
+  let filteredProductsL1 = [];
+  let filteredProductsL2 = [];
 };
 
 const doFilters = function () {
