@@ -61,8 +61,8 @@ const doFilters = function () {
 
 const doProductFilter = function () {
   //todo  122621.1044  Handle ALL option
+  resetFilteredProducts();
   if (filterProduct === "All") {
-    resetFilteredProducts();
     c("hello there All");
   } else if (filterProduct === "New") {
     //todo  122621.1044  Handle New Product option
@@ -202,6 +202,8 @@ document.querySelector("#myRadio1").addEventListener("click", function () {
 document.querySelector("#myRadio2").addEventListener("click", function () {
   //todo SET NEW PRODUCTS
   filterProduct = "New";
+  doFilters();
+  visualizeFilteredProducts();
 });
 
 document.querySelector("#myRadio3").addEventListener("click", function () {
@@ -274,7 +276,7 @@ document.querySelector("#myRadio13").addEventListener("click", function () {
   visualizeFilteredProducts();
 });
 
-document.querySelector("#myRadio13").addEventListener("click", function () {
+document.querySelector("#myRadio14").addEventListener("click", function () {
   //todo 122621.1106    Dist THENDRO
   filterDist = "Thendro";
   doFilters();
