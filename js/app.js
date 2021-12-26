@@ -37,9 +37,16 @@ var currentActive;
 var navText;
 var currentSelection = 0;
 
-function init() {
+const init = function () {
+  duplicateJsonArray();
+};
+
+const duplicateJsonArray = function () {
+  allProducts = [...zydot];
+};
+
+function init2() {
   for (var i = 0; i < zydot.length; i++) {
-    //&  21921.1625----------------Variables per loop
     c(i);
     country = zydot[i].country.charAt(0).toLowerCase();
     completeCountry = zydot[i].country;
@@ -72,10 +79,6 @@ function init() {
     }
 
     currentRow = i + 1;
-
-    //&  21921.1859---------------Literal Template ATTEMPT
-
-    //&  22121.0950------'PRODUCT' is introduced to map 'DATA to' at line 73,  as easy strings
 
     document.getElementById("gridContainer").innerHTML = `
     <div>
@@ -115,6 +118,10 @@ function init() {
   }
 }
 
-window.onload = function () {
+function main() {
   init();
+}
+
+window.onload = function () {
+  main();
 };
