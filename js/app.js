@@ -54,11 +54,68 @@ const resetFilteredProducts = function () {
   filteredProducts = allProducts.slice();
 };
 
-const filterDistributors = function () {};
+const doFilters = function () {
+  doProductFilter();
+  doDistFilter();
+};
 
-const whichButton = function () {};
+const doProductFilter = function () {
+  //todo  122621.1044  Handle ALL option
+  if (filterProduct === "All") {
+    resetFilteredProducts();
+    c("hello there All");
+  } else if (filterProduct === "New") {
+    //todo  122621.1044  Handle New Product option
+    c("hello there New");
+  } else if (filterProduct === "Ultra Clean") {
+    //todo  122621.1044  Handle Ultra Clean option
+    c("hello there Ultra Clean");
+  } else if (filterProduct === "Ultimate Blend Drink") {
+    c("hello there Ultimate Blend Drink");
+    //todo  122621.1044  Handle Ultimate Blend Drink option
+  } else if (filterProduct === "Ultimate Blend Mix") {
+    c("hello there Ultimate Blend Mix");
+    //todo  122621.1044  Handle Ultimate Blend Mix option
+  } else if (filterProduct === "Euro Blend") {
+    c("hello there Euro Blend");
+    //todo  122621.1044  Handle Euro Blend option
+  } else if (filterProduct === "Other") {
+    c("hello there Other");
+    //todo  122621.1044  Handle Other option
+  }
+};
 
-const visualizeFilteredProducts = function () {};
+const doDistFilter = function () {
+  //todo  122621.1044  Handle Any option
+  if (filterDist === "Any") {
+    c("hello there Any");
+  } else if (filterDist === "USA") {
+    //todo  122621.1044  Handle USA option
+    c("hello there USA");
+  } else if (filterDist === "Agung") {
+    //todo  122621.1044  Handle Agung option
+    c("hello there Agung");
+  } else if (filterDist === "Kulu") {
+    //todo  122621.1044  Handle Kulu option
+    c("hello there Kulu");
+  } else if (filterDist === "La Cabra") {
+    //todo  122621.1044  Handle La Cabra option
+    c("hello there La Cabra");
+  } else if (filterDist === "Thendro") {
+    //todo  122621.1044  Handle Thendro option
+    c("hello there Thendro");
+  }
+};
+
+const whichButton = function () {
+  $(document).ready(function () {
+    $("input[type='radio']").click;
+  });
+};
+
+const visualizeFilteredProducts = function () {
+  //todo  122621.1017     final visualizer
+};
 
 function init2() {
   for (var i = 0; i < zydot.length; i++) {
@@ -137,23 +194,91 @@ function init2() {
 
 document.querySelector("#myRadio1").addEventListener("click", function () {
   //todo SET ALL PRODUCTS
-  resetFilteredProducts();
-  //todo CHECK FOR DIST
-  filterDistributors();
-
+  filterProduct = "All";
+  doFilters();
   visualizeFilteredProducts();
 });
 
 document.querySelector("#myRadio2").addEventListener("click", function () {
   //todo SET NEW PRODUCTS
+  filterProduct = "New";
 });
 
 document.querySelector("#myRadio3").addEventListener("click", function () {
-  //todo ULTRA CLEAN PRODUCTS
-  //todo Duplicate Ultra Clean Entries
-  //todo Implement Distributor
-  resetFilteredProducts();
-  var allProducts = resetJsonArray;
+  //todo 122621.1106    Set ULTRA CLEAN
+  filterProduct = "Ultra Clean";
+  doFilters();
+  visualizeFilteredProducts();
+});
+
+document.querySelector("#myRadio4").addEventListener("click", function () {
+  //todo 122621.1106    Set UB DRINK
+  filterProduct = "Ultimate Blend Drink";
+  doFilters();
+  visualizeFilteredProducts();
+});
+
+document.querySelector("#myRadio5").addEventListener("click", function () {
+  //todo 122621.1106    Set UB MIX
+  filterProduct = "Ultimate Blend Mix";
+  doFilters();
+  visualizeFilteredProducts();
+});
+
+document.querySelector("#myRadio6").addEventListener("click", function () {
+  //todo 122621.1106    Set EURO BLEND
+  filterProduct = "Euro Blend";
+  doFilters();
+  visualizeFilteredProducts();
+});
+
+document.querySelector("#myRadio7").addEventListener("click", function () {
+  //todo 122621.1106    Set OTHER
+  filterProduct = "Other";
+  doFilters();
+  visualizeFilteredProducts();
+});
+
+document.querySelector("#myRadio9").addEventListener("click", function () {
+  //todo 122621.1106    Dist ANY
+  filterDist = "Any";
+  doFilters();
+  visualizeFilteredProducts();
+});
+
+document.querySelector("#myRadio10").addEventListener("click", function () {
+  //todo 122621.1106    Dist USA & English
+  filterDist = "USA";
+  doFilters();
+  visualizeFilteredProducts();
+});
+
+document.querySelector("#myRadio11").addEventListener("click", function () {
+  //todo 122621.1106    Dist AGUNG
+  filterDist = "Agung";
+  doFilters();
+  visualizeFilteredProducts();
+});
+
+document.querySelector("#myRadio12").addEventListener("click", function () {
+  //todo 122621.1106    Dist KULU
+  filterDist = "Kulu";
+  doFilters();
+  visualizeFilteredProducts();
+});
+
+document.querySelector("#myRadio13").addEventListener("click", function () {
+  //todo 122621.1106    Dist LA CABRA
+  filterDist = "La Cabra";
+  doFilters();
+  visualizeFilteredProducts();
+});
+
+document.querySelector("#myRadio13").addEventListener("click", function () {
+  //todo 122621.1106    Dist THENDRO
+  filterDist = "Thendro";
+  doFilters();
+  visualizeFilteredProducts();
 });
 
 //!  122221.2014    MAIN SEQUENCE
