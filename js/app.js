@@ -75,12 +75,9 @@ const doProductFilter = function () {
     //todo  122621.1044  Handle Ultra Clean option
     c("hello there Ultra Clean");
     c({ filteredProducts });
-    var filteredProductsL1 = filteredProducts.filter(function (el) {
+    filteredProductsL1 = filteredProducts.filter(function (el) {
       return el.code.charAt(1) == "U" && el.code.charAt(2) == "B";
     });
-    //    let filteredProductsL1 = filteredProducts.filter(function (f) {
-    //      return f.kind.charAt(0) == "u";
-
     c({ filteredProducts });
     c({ filteredProductsL1 });
   } else if (filterProduct === "Ultimate Blend Drink") {
@@ -105,6 +102,12 @@ const doDistFilter = function () {
   } else if (filterDist === "USA") {
     //todo  122621.1044  Handle USA option
     c("hello there USA");
+    filteredProductsL2 = filteredProductsL1.filter(function (el) {
+      return el.dist.charAt(0) == "z";
+    });
+    c({ filteredProducts });
+    c({ filteredProductsL1 });
+    c({ filteredProductsL2 });
   } else if (filterDist === "Agung") {
     //todo  122621.1044  Handle Agung option
     c("hello there Agung");
