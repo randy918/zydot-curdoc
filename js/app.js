@@ -74,6 +74,15 @@ const doProductFilter = function () {
   } else if (filterProduct === "Ultra Clean") {
     //todo  122621.1044  Handle Ultra Clean option
     c("hello there Ultra Clean");
+    c({ filteredProducts });
+    var filteredProductsL1 = filteredProducts.filter(function (el) {
+      return el.code.charAt(1) == "U" && el.code.charAt(2) == "B";
+    });
+    //    let filteredProductsL1 = filteredProducts.filter(function (f) {
+    //      return f.kind.charAt(0) == "u";
+
+    c({ filteredProducts });
+    c({ filteredProductsL1 });
   } else if (filterProduct === "Ultimate Blend Drink") {
     c("hello there Ultimate Blend Drink");
     //todo  122621.1044  Handle Ultimate Blend Drink option
@@ -117,11 +126,7 @@ const whichButton = function () {
   });
 };
 
-const visualizeFilteredProducts = function () {
-  //todo  122621.1017     final visualizer
-};
-
-function init2() {
+function visualizeFilteredProducts() {
   for (var i = 0; i < zydot.length; i++) {
     c(i);
     country = zydot[i].country.charAt(0).toLowerCase();
