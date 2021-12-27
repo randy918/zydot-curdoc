@@ -68,7 +68,7 @@
  }
 
  .yellow {
-   color: getColor(theYellow)
+   color: getColor(theYellow);
 
    margin-bottom: 0;
    padding-bottom: 0;
@@ -177,6 +177,10 @@
    color: getColor(theYellow);
  }
 
+ .main-logo2 {
+  width: clamp(100px, 50%, 300px);
+  margin-bottom: .3em;
+}
  // .invertedPhotoAttempt {
  //   transform: scaleX(-1);
  //   transform: scaleY(-1); 

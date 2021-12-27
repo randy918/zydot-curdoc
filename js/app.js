@@ -250,6 +250,13 @@ document.querySelector("#myRadio7").addEventListener("click", function () {
   visualizeFilteredProducts();
 });
 
+document.querySelector("#myRadio8").addEventListener("click", function () {
+  //todo 122621.1106    Set EXPELIT
+  filterProduct = "Other";
+  doFilters();
+  visualizeFilteredProducts();
+});
+
 document.querySelector("#myRadio9").addEventListener("click", function () {
   //todo 122621.1106    Dist ANY
   filterDist = "Any";
