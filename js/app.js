@@ -130,34 +130,34 @@ const whichButton = function () {
 };
 
 function visualizeFilteredProducts() {
-  for (var i = 0; i < zydot.length; i++) {
+  for (var i = 0; i < filteredProductsL2.length; i++) {
     c(i);
-    country = zydot[i].country.charAt(0).toLowerCase();
-    completeCountry = zydot[i].country;
-    flavor = zydot[i].flavor.charAt(0);
-    kind = zydot[i].kind.charAt(3);
+    country = filteredProductsL2[i].country.charAt(0).toLowerCase();
+    completeCountry = filteredProductsL2[i].country;
+    flavor = filteredProductsL2[i].flavor.charAt(0);
+    kind = filteredProductsL2[i].kind.charAt(3);
     flag = "./zimages/" + country + flavor + kind + ".png";
     c(flag);
     num = i;
     c(num);
-    theTitle = zydot[i].title;
+    theTitle = filteredProductsL2[i].title;
     theDashTitle =
       theTitle.replace(/\s+/g, "-").toLowerCase() +
       "-" +
-      zydot[i].country.toLowerCase();
+      filteredProductsL2[i].country.toLowerCase();
     c(theDashTitle);
 
     ifNew = theTitle.substring(0, 3);
 
-    datecode = zydot[i].datecode;
-    code = zydot[i].code;
+    datecode = filteredProductsL2[i].datecode;
+    code = filteredProductsL2[i].code;
     filename = "./zfiles/" + datecode + "-" + code;
 
-    date = zydot[i].date;
+    date = filteredProductsL2[i].date;
 
-    pdf = zydot[i].pdf;
+    pdf = filteredProductsL2[i].pdf;
 
-    printer = zydot[i].printer;
+    printer = filteredProductsL2[i].printer;
     if ((printer = ".pdf")) {
       printer = "-.pdf";
     }
@@ -167,7 +167,7 @@ function visualizeFilteredProducts() {
     document.getElementById("gridContainer").innerHTML = `
     <div>
   
-            ${zydot
+            ${filteredProductsL2
               .map(function (product) {
                 return `
                 <div class="box one" id="box1">
