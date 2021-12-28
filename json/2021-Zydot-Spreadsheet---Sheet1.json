@@ -11,7 +11,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u16m",
    "flavor": "t",
-   "dist": "la cabra"
+   "dist": "la cabra", 
+   "new": false, 
  },
  {
    "row": 2,
@@ -25,7 +26,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u16m",
    "flavor": "c",
-   "dist": "la cabra"
+   "dist": "la cabra", 
+   "new": false, 
  },
  {
    "row": 3,
@@ -39,7 +41,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u16m",
    "flavor": "o",
-   "dist": "la cabra"
+   "dist": "la cabra", 
+   "new": false, 
  },
  {
    "row": 4,
@@ -53,7 +56,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u16m",
    "flavor": "t",
-   "dist": "kulu"
+   "dist": "kulu", 
+   "new": false, 
  },
  {
    "row": 5,
@@ -67,7 +71,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u16m",
    "flavor": "c",
-   "dist": "kulu"
+   "dist": "kulu", 
+   "new": false, 
  },
  {
    "row": 6,
@@ -81,7 +86,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u16m",
    "flavor": "o",
-   "dist": "kulu"
+   "dist": "kulu", 
+   "new": false, 
  },
  {
    "row": 7,
@@ -95,7 +101,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u16m",
    "flavor": "t",
-   "dist": "kulu"
+   "dist": "kulu", 
+   "new": false, 
  },
  {
    "row": 8,
@@ -109,7 +116,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u16m",
    "flavor": "c",
-   "dist": "kulu"
+   "dist": "kulu", 
+   "new": false, 
  },
  {
    "row": 9,
@@ -123,7 +131,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u16m",
    "flavor": "o",
-   "dist": "kulu"
+   "dist": "kulu", 
+   "new": false, 
  },
  {
    "row": 10,
@@ -137,7 +146,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u16m",
    "flavor": "t",
-   "dist": "tangy gifts"
+   "dist": "tangy gifts", 
+   "new": false, 
  },
  {
    "row": 11,
@@ -151,7 +161,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u16m",
    "flavor": "c",
-   "dist": "tangy gifts"
+   "dist": "tangy gifts", 
+   "new": false, 
  },
  {
    "row": 12,
@@ -165,7 +176,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u16m",
    "flavor": "t",
-   "dist": "tangy gifts"
+   "dist": "tangy gifts", 
+   "new": false, 
  }, {
    "row": 13,
    "date": "November 4, 2021",
@@ -178,7 +190,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u16d",
    "flavor": "t",
-   "dist": "zydot"
+   "dist": "zydot", 
+   "new": false, 
  }, {
    "row": 14,
    "date": "November 4, 2021",
@@ -191,7 +204,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u16d",
    "flavor": "c",
-   "dist": "zydot"
+   "dist": "zydot", 
+   "new": false, 
  }, {
    "row": 15,
    "date": "November 4, 2021",
@@ -204,7 +218,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u16d",
    "flavor": "o",
-   "dist": "zydot"
+   "dist": "zydot", 
+   "new": false, 
  }, {
    "row": 16,
    "date": "November 4, 2021",
@@ -217,7 +232,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u16m",
    "flavor": "t",
-   "dist": "zydot"
+   "dist": "zydot", 
+   "new": false, 
  }, {
    "row": 17,
    "date": "November 4, 2021",
@@ -230,7 +246,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u16m",
    "flavor": "c",
-   "dist": "zydot"
+   "dist": "zydot", 
+   "new": false, 
  }, {
    "row": 18,
    "date": "November 4, 2021",
@@ -243,7 +260,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u16m",
    "flavor": "o",
-   "dist": "zydot"
+   "dist": "zydot", 
+   "new": false, 
  },
  {
    "row": 19,
@@ -257,7 +275,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u32d",
    "flavor": "t",
-   "dist": "zydot"
+   "dist": "zydot", 
+   "new": false, 
  },
  {
    "row": 20,
@@ -271,7 +290,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u32d",
    "flavor": "c",
-   "dist": "zydot"
+   "dist": "zydot", 
+   "new": false, 
  },
  {
    "row": 21,
@@ -285,7 +305,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u32d",
    "flavor": "o",
-   "dist": "zydot"
+   "dist": "zydot", 
+   "new": false, 
  },
  {
    "row": 22,
@@ -299,7 +320,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u16d",
    "flavor": "t",
-   "dist": "agung"
+   "dist": "agung", 
+   "new": false, 
  },
  {
    "row": 23,
@@ -313,7 +335,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u16d",
    "flavor": "c",
-   "dist": "agung"
+   "dist": "agung", 
+   "new": false, 
  },
  {
    "row": 24,
@@ -327,7 +350,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u16d",
    "flavor": "o",
-   "dist": "agung"
+   "dist": "agung", 
+   "new": false, 
  },{
    "row": 25,
    "date": "October 27, 2021",
@@ -340,7 +364,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u32d",
    "flavor": "t",
-   "dist": "agung"
+   "dist": "agung", 
+   "new": false, 
  },
  {
    "row": 26,
@@ -354,7 +379,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u32d",
    "flavor": "c",
-   "dist": "agung"
+   "dist": "agung", 
+   "new": false, 
  },
  {
    "row": 27,
@@ -368,7 +394,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u32d",
    "flavor": "o",
-   "dist": "agung"
+   "dist": "agung", 
+   "new": false, 
  },
  {
    "row": 28,
@@ -382,7 +409,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u32d",
    "flavor": "t",
-   "dist": "thendro"
+   "dist": "thendro", 
+   "new": false, 
  },
  {
    "row": 29,
@@ -396,7 +424,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u32d",
    "flavor": "c",
-   "dist": "thendro"
+   "dist": "thendro", 
+   "new": false, 
  },
  {
    "row": 30,
@@ -410,7 +439,8 @@ zydot = [
    "printer": ".ai",
    "kind": "u32d",
    "flavor": "o",
-   "dist": "thendro"
+   "dist": "thendro", 
+   "new": false, 
  },
  {
    "row": 31,
@@ -424,7 +454,8 @@ zydot = [
    "printer": ".ai",
    "kind": "ultraclean",
    "flavor": "0",
-   "dist": "zydot"
+   "dist": "zydot", 
+   "new": false, 
  },
  {
    "row": 32,
@@ -438,7 +469,8 @@ zydot = [
    "printer": ".ai",
    "kind": "ultraclean",
    "flavor": "0",
-   "dist": "kulu"
+   "dist": "kulu", 
+   "new": false, 
  },
  {
    "row": 33,
@@ -452,7 +484,8 @@ zydot = [
    "printer": ".pdf",
    "kind": "ultraclean",
    "flavor": "0",
-   "dist": "zydot"
+   "dist": "zydot", 
+   "new": false, 
  },
  {
    "row": 34,
@@ -466,7 +499,8 @@ zydot = [
    "printer": ".3-up.pdf",
    "kind": "ultraclean",
    "flavor": "0",
-   "dist": "zydot"
+   "dist": "zydot", 
+   "new": false, 
  },
  {
    "row": 35,
@@ -480,7 +514,8 @@ zydot = [
    "printer": ".pdf",
    "kind": "ultraclean",
    "flavor": "0",
-   "dist": "kulu"
+   "dist": "kulu", 
+   "new": false, 
  },
  {
    "row": 36,
@@ -494,7 +529,8 @@ zydot = [
    "printer": ".pdf",
    "kind": "ultraclean",
    "flavor": "0",
-   "dist": "kulu"
+   "dist": "kulu", 
+   "new": false, 
  },
  {
    "row": 37,
@@ -508,7 +544,8 @@ zydot = [
    "printer": ".3-up.pdf",
    "kind": "ultraclean",
    "flavor": "0",
-   "dist": "kulu"
+   "dist": "kulu", 
+   "new": false, 
  }, 
  {
    "row": 38,
@@ -522,7 +559,8 @@ zydot = [
    "printer": ".display.pdf",
    "kind": "ultraclean",
    "flavor": "0",
-   "dist": "zydot"
+   "dist": "zydot", 
+   "new": false, 
  }, 
  {
    "row": 39,
@@ -536,6 +574,7 @@ zydot = [
    "printer": ".pdf",
    "kind": "logo",
    "flavor": "0",
-   "dist": "zydot"
+   "dist": "zydot", 
+   "new": false, 
  }
 ]
