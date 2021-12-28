@@ -49,13 +49,17 @@ var filterDist = "Any";
 
 const init = function () {
   resetFilteredProducts();
+  filteredProductsL2 = allProducts.slice();
+  c({ filteredProducts });
+  c(filteredProducts.length);
+
   visualizeFilteredProducts();
 };
 
 const resetFilteredProducts = function () {
   filteredProducts = allProducts.slice();
-  let filteredProductsL1 = [];
-  let filteredProductsL2 = [];
+  filteredProductsL1 = [];
+  filteredProductsL2 = [];
 };
 
 const doFilters = function () {
@@ -67,40 +71,61 @@ const doProductFilter = function () {
   //todo  122621.1044  Handle ALL option
   resetFilteredProducts();
   if (filterProduct === "All") {
+    filteredProductsL1 = filteredProducts.slice();
     c("hello there All");
-  } else if (filterProduct === "New") {
+
     //todo  122621.1044  Handle New Product option
+  } else if (filterProduct === "New") {
     c("hello there New");
-  } else if (filterProduct === "Ultra Clean") {
-    //todo  122621.1044  Handle Ultra Clean option
-    c("hello there Ultra Clean");
-    c({ filteredProducts });
     filteredProductsL1 = filteredProducts.filter(function (el) {
-      return el.code.charAt(1) == "U" && el.code.charAt(2) == "B";
+      return el.new == true;
     });
     c({ filteredProducts });
     c({ filteredProductsL1 });
+    //todo  122621.1044  Handle Ultra Clean option
+  } else if (filterProduct === "Ultra Clean") {
+    c("hello there Ultra Clean");
+    c({ filteredProducts });
+    filteredProductsL1 = filteredProducts.filter(function (el) {
+      return el.code.charAt(2) == "C";
+    });
+    c({ filteredProducts });
+    c({ filteredProductsL1 });
+
+    //todo  122621.1044  Handle Ultimate Blend Drink option
   } else if (filterProduct === "Ultimate Blend Drink") {
     c("hello there Ultimate Blend Drink");
-    //todo  122621.1044  Handle Ultimate Blend Drink option
+    filteredProductsL1 = filteredProducts.filter(function (el) {
+      return el.code.charAt(5) == "D";
+    });
+    //todo  122621.1044  Handle Ultimate Blend Mix option
   } else if (filterProduct === "Ultimate Blend Mix") {
     c("hello there Ultimate Blend Mix");
-    //todo  122621.1044  Handle Ultimate Blend Mix option
+    filteredProductsL1 = filteredProducts.filter(function (el) {
+      return el.code.charAt(5) == "M" && el.code.charAt(1) == "U";
+    });
+    //todo  122621.1044  Handle Euro Blend option
   } else if (filterProduct === "Euro Blend") {
     c("hello there Euro Blend");
-    //todo  122621.1044  Handle Euro Blend option
+    filteredProductsL1 = filteredProducts.filter(function (el) {
+      return el.code.charAt(1) == "E";
+    });
+    //todo  122621.1044  Handle Other option
   } else if (filterProduct === "Other") {
     c("hello there Other");
-    //todo  122621.1044  Handle Other option
+    filteredProductsL1 = filteredProducts.filter(function (el) {
+      return el.kind == "misc";
+    });
   }
 };
 
 const doDistFilter = function () {
   //todo  122621.1044  Handle Any option
   if (filterDist === "Any") {
+    filteredProductsL2 = filteredProductsL1.slice();
     c("hello there Any");
-  } else if (filterDist === "USA") {
     //todo  122621.1044  Handle USA option
+  } else if (filterDist === "USA") {
     c("hello there USA");
     filteredProductsL2 = filteredProductsL1.filter(function (el) {
       return el.dist.charAt(0) == "z";
@@ -108,17 +133,17 @@ const doDistFilter = function () {
     c({ filteredProducts });
     c({ filteredProductsL1 });
     c({ filteredProductsL2 });
-  } else if (filterDist === "Agung") {
     //todo  122621.1044  Handle Agung option
+  } else if (filterDist === "Agung") {
     c("hello there Agung");
-  } else if (filterDist === "Kulu") {
     //todo  122621.1044  Handle Kulu option
+  } else if (filterDist === "Kulu") {
     c("hello there Kulu");
-  } else if (filterDist === "La Cabra") {
     //todo  122621.1044  Handle La Cabra option
+  } else if (filterDist === "La Cabra") {
     c("hello there La Cabra");
-  } else if (filterDist === "Thendro") {
     //todo  122621.1044  Handle Thendro option
+  } else if (filterDist === "Thendro") {
     c("hello there Thendro");
   }
 };
@@ -264,6 +289,8 @@ document.querySelector("#myRadio9").addEventListener("click", function () {
   //todo 122621.1106    Dist ANY
   filterDist = "Any";
   doFilters();
+  c({ filteredProducts });
+  c({ filteredProductsL1 });
   visualizeFilteredProducts();
 });
 

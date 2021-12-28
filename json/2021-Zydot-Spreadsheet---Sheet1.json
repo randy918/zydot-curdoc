@@ -572,7 +572,7 @@ zydot = [
    "code old": "UCGINST",
    "pdf": "n",
    "printer": ".pdf",
-   "kind": "logo",
+   "kind": "misc",
    "flavor": "0",
    "dist": "zydot", 
    "new": false, 
