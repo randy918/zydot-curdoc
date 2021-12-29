@@ -73,16 +73,10 @@ const doProductFilter = function () {
     c({ filteredProductsL1 });
 
     //todo  122621.1044  Handle Ultimate Blend Drink option
-  } else if (filterProduct === "Ultimate Blend Drink") {
-    c("hello there Ultimate Blend Drink");
+  } else if (filterProduct === "Ultimate Blend") {
+    c("hello there Ultimate Blend");
     filteredProductsL1 = filteredProducts.filter(function (el) {
-      return el.code.charAt(5) == "D";
-    });
-    //todo  122621.1044  Handle Ultimate Blend Mix option
-  } else if (filterProduct === "Ultimate Blend Mix") {
-    c("hello there Ultimate Blend Mix");
-    filteredProductsL1 = filteredProducts.filter(function (el) {
-      return el.code.charAt(5) == "M" && el.code.charAt(1) == "U";
+      return el.code.charAt(1) == "U";
     });
     //todo  122621.1044  Handle Euro Blend option
   } else if (filterProduct === "Euro Blend") {
@@ -252,15 +246,8 @@ document.querySelector("#myRadio3").addEventListener("click", function () {
 });
 
 document.querySelector("#myRadio4").addEventListener("click", function () {
-  //todo 122621.1106    Set UB DRINK
-  filterProduct = "Ultimate Blend Drink";
-  doFilters();
-  visualizeFilteredProducts();
-});
-
-document.querySelector("#myRadio5").addEventListener("click", function () {
-  //todo 122621.1106    Set UB MIX
-  filterProduct = "Ultimate Blend Mix";
+  //todo 122621.1106    Set ULTIMATE BLEND
+  filterProduct = "Ultimate Blend";
   doFilters();
   visualizeFilteredProducts();
 });
@@ -273,15 +260,15 @@ document.querySelector("#myRadio6").addEventListener("click", function () {
 });
 
 document.querySelector("#myRadio7").addEventListener("click", function () {
-  //todo 122621.1106    Set OTHER
-  filterProduct = "Other";
+  //todo 122621.1106    Set EXPElIT
+  filterProduct = "Expelit";
   doFilters();
   visualizeFilteredProducts();
 });
 
 document.querySelector("#myRadio8").addEventListener("click", function () {
-  //todo 122621.1106    Set EXPELIT
-  filterProduct = "Other";
+  //todo 122621.1106    Set MISC
+  filterProduct = "Misc";
   doFilters();
   visualizeFilteredProducts();
 });
