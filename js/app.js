@@ -37,6 +37,7 @@ const resetFilteredProducts = function () {
   filteredProducts = allProducts.slice();
   filteredProductsL1 = filteredProducts.slice();
   filteredProductsL2 = filteredProductsL1.slice();
+
   //  filteredProductsL1 = [];
   //  filteredProductsL2 = [];
 };
@@ -116,9 +117,7 @@ const doDistFilter = function () {
     filteredProductsL2 = filteredProductsL1.filter(function (el) {
       return el.dist.charAt(0) == "z";
     });
-    c({ filteredProducts });
-    c({ filteredProductsL1 });
-    c({ filteredProductsL2 });
+
     //todo  122621.1044  Handle Agung option
   } else if (filterDist === "Agung") {
     c("hello there Agung");
@@ -159,6 +158,14 @@ const whichButton = function () {
 };
 
 function visualizeFilteredProducts() {
+  c({ filteredProducts });
+  c({ filteredProductsL1 });
+  c({ filteredProductsL2 });
+  c(filteredProductsL2.length);
+
+  if (filteredProductsL2.length === 0) {
+    location.reload();
+  }
   for (var i = 0; i < filteredProductsL2.length; i++) {
     country = filteredProductsL2[i].country.charAt(0).toLowerCase();
     completeCountry = filteredProductsL2[i].country;
@@ -240,6 +247,7 @@ document.querySelector("#myRadio3").addEventListener("click", function () {
   //todo 122621.1106    Set ULTRA CLEAN
   filterProduct = "Ultra Clean";
   doFilters();
+
   visualizeFilteredProducts();
 });
 
@@ -282,8 +290,6 @@ document.querySelector("#myRadio9").addEventListener("click", function () {
   //todo 122621.1106    Dist ANY
   filterDist = "Any";
   doFilters();
-  c({ filteredProducts });
-  c({ filteredProductsL1 });
   visualizeFilteredProducts();
 });
 
