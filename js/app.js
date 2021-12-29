@@ -1,10 +1,5 @@
-//!  72519.1708 DICTIONARY ARRAYS RESOURCES
-
 //!  21921.1621------------------------Beginning of program
 
-// var zData = JSON.parse(zydot);
-
-console.log(typeof zydot);
 console.log(zydot.length);
 
 //!  21921.1621----------------Initialize variables
@@ -12,31 +7,15 @@ console.log(zydot.length);
 var country;
 var flavor;
 var kind;
-var flag;
 var datecode;
 var code;
 var filename;
 var date;
 var pdf;
 var printer;
-var currentRow;
 var theTitle;
 var theNewTitle;
 var theDashTitle;
-var num;
-var prefix;
-var suffix;
-
-var spreadsheetRow;
-var prefixAndSuffix;
-var webSite;
-var disableWeb;
-var disableIndesign;
-var currentCategory;
-var currentActive;
-var navText;
-var currentSelection = 0;
-let allYears = [];
 
 const allProducts = [...zydot];
 let filteredProducts = [];
@@ -44,22 +23,22 @@ let filteredProductsL1 = [];
 let filteredProductsL2 = [];
 
 var filterProduct = "All";
-
 var filterDist = "Any";
 
 const init = function () {
   resetFilteredProducts();
-  filteredProductsL2 = allProducts.slice();
-  c({ filteredProducts });
-  c(filteredProducts.length);
-
+  var filterProduct = "All";
+  var filterDist = "Any";
+  //  filteredProductsL2 = allProducts.slice();
   visualizeFilteredProducts();
 };
 
 const resetFilteredProducts = function () {
   filteredProducts = allProducts.slice();
-  filteredProductsL1 = [];
-  filteredProductsL2 = [];
+  filteredProductsL1 = filteredProducts.slice();
+  filteredProductsL2 = filteredProductsL1.slice();
+  //  filteredProductsL1 = [];
+  //  filteredProductsL2 = [];
 };
 
 const doFilters = function () {
@@ -110,6 +89,13 @@ const doProductFilter = function () {
     filteredProductsL1 = filteredProducts.filter(function (el) {
       return el.code.charAt(1) == "E";
     });
+    //todo  122621.1044  Handle Expelit option
+  } else if (filterProduct === "Expelit") {
+    c("hello there Euro Blend");
+    filteredProductsL1 = filteredProducts.filter(function (el) {
+      return el.code.charAt(1) == "E";
+    });
+
     //todo  122621.1044  Handle Other option
   } else if (filterProduct === "Other") {
     c("hello there Other");
@@ -136,15 +122,33 @@ const doDistFilter = function () {
     //todo  122621.1044  Handle Agung option
   } else if (filterDist === "Agung") {
     c("hello there Agung");
+    filteredProductsL2 = filteredProductsL1.filter(function (el) {
+      return el.dist.charAt(0) == "a";
+    });
     //todo  122621.1044  Handle Kulu option
   } else if (filterDist === "Kulu") {
     c("hello there Kulu");
+    filteredProductsL2 = filteredProductsL1.filter(function (el) {
+      return el.dist.charAt(0) == "k";
+    });
     //todo  122621.1044  Handle La Cabra option
   } else if (filterDist === "La Cabra") {
     c("hello there La Cabra");
+    filteredProductsL2 = filteredProductsL1.filter(function (el) {
+      return el.dist.charAt(0) == "l";
+    });
+    //todo  122621.1044  Handle Tangy option
+  } else if (filterDist === "Tangy") {
+    c("hello there Tangy");
+    filteredProductsL2 = filteredProductsL1.filter(function (el) {
+      return el.dist.charAt(0) == "t" && el.dist.charAt(1) == "a";
+    });
     //todo  122621.1044  Handle Thendro option
   } else if (filterDist === "Thendro") {
     c("hello there Thendro");
+    filteredProductsL2 = filteredProductsL1.filter(function (el) {
+      return el.dist.charAt(0) == "t" && el.dist.charAt(1) == "h";
+    });
   }
 };
 
@@ -156,21 +160,15 @@ const whichButton = function () {
 
 function visualizeFilteredProducts() {
   for (var i = 0; i < filteredProductsL2.length; i++) {
-    c(i);
     country = filteredProductsL2[i].country.charAt(0).toLowerCase();
     completeCountry = filteredProductsL2[i].country;
     flavor = filteredProductsL2[i].flavor.charAt(0);
     kind = filteredProductsL2[i].kind.charAt(3);
-    flag = "./zimages/" + country + flavor + kind + ".png";
-    c(flag);
-    num = i;
-    c(num);
     theTitle = filteredProductsL2[i].title;
     theDashTitle =
       theTitle.replace(/\s+/g, "-").toLowerCase() +
       "-" +
       filteredProductsL2[i].country.toLowerCase();
-    c(theDashTitle);
 
     ifNew = theTitle.substring(0, 3);
 
@@ -219,11 +217,6 @@ function visualizeFilteredProducts() {
               })
               .join("")}
             `;
-
-    if ((ifNew = "NEW")) {
-      theNewTitle = theTitle.replace("NEW ", '<span class="green">NEW </span>');
-      theTitle = theNewTitle;
-    }
   }
 }
 
@@ -323,6 +316,13 @@ document.querySelector("#myRadio13").addEventListener("click", function () {
 });
 
 document.querySelector("#myRadio14").addEventListener("click", function () {
+  //todo 122621.1106    Dist TANGY
+  filterDist = "Tangy";
+  doFilters();
+  visualizeFilteredProducts();
+});
+
+document.querySelector("#myRadio15").addEventListener("click", function () {
   //todo 122621.1106    Dist THENDRO
   filterDist = "Thendro";
   doFilters();
