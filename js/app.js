@@ -330,4 +330,6 @@ function main() {
 
 window.onload = function () {
   main();
+  document.querySelector("#myRadio1").checked = true;
+  document.querySelector("#myRadio9").checked = true;
 };
