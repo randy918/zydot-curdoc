@@ -190,7 +190,7 @@ body {
     display: none;
   }
   &__input:hover + &__label {
-    background-image: linear-gradient(to bottom, #ed4509, #f04747);
+    background-image: linear-gradient(to bottom, #73e67a, #61cc4b);
     color: black;
     transition: 0.3s;
   }
@@ -243,7 +243,7 @@ body {
   }
 
   &__label {
-    background-image: linear-gradient(to bottom, #0808e6, #100457);
+    background-image: linear-gradient(to bottom, #12b984, #063780);
     border-radius: 2rem;
     cursor: pointer;
     margin: 0 0.3rem;

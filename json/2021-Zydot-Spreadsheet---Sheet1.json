@@ -577,7 +577,7 @@ zydot = [
    "printer": ".display.pdf",
    "kind": "ultraclean",
    "flavor": "0",
-   "dist": "Z,", 
+   "dist": "Z", 
    "new": false, 
  }, 
  {

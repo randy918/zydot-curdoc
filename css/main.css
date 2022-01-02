@@ -153,8 +153,8 @@ body {
 }
 
 .radio__input:hover + .radio__label {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ed4509), to(#f04747));
-  background-image: linear-gradient(to bottom, #ed4509, #f04747);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#73e67a), to(#61cc4b));
+  background-image: linear-gradient(to bottom, #73e67a, #61cc4b);
   color: black;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -205,8 +205,8 @@ body {
 }
 
 .radio2__label {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#0808e6), to(#100457));
-  background-image: linear-gradient(to bottom, #0808e6, #100457);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#12b984), to(#063780));
+  background-image: linear-gradient(to bottom, #12b984, #063780);
   border-radius: 2rem;
   cursor: pointer;
   margin: 0 0.3rem;
