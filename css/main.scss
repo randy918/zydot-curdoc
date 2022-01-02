@@ -7,10 +7,10 @@
 
 //!  Sass Default Variables PERMANENT
 $colors: (
-  bg: rgba(55, 66, 76, 1),
+  bg: rgba(32, 33, 37, 1),
   theBlue: rgba(26, 161, 217, 1),
   theDarkGray: rgba(43, 50, 56, 1),
-  theGray: rgb(78, 92, 107),
+  theGray: rgb(32, 33, 37),
   theGreen: rgba(0, 173, 43, 1),
   theRed: rgba(194, 47, 51, 1),
   theYellow: rgb(221, 172, 94),
@@ -177,7 +177,48 @@ body {
 
 .radio {
   overflow: hidden;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+
+  color: #ffffff;
+  //  padding: 1em;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+
+  margin: 1rem;
+
+  &__input {
+    display: none;
+  }
+  &__input:hover + &__label {
+    background-image: linear-gradient(to bottom, #ed4509, #f04747);
+    color: black;
+    transition: 0.3s;
+  }
+
+  &__input:checked + &__label {
+    background: white;
+    color: black;
+  }
+
+  &__label {
+    background-image: linear-gradient(to bottom, #e60808, #570410);
+    border-radius: 2rem;
+    cursor: pointer;
+    margin: 0 0.3rem;
+    padding: 0.25em 1.02em;
+
+    font-family: Arial;
+    //  font-size: 1.2rem;
+    //  font-size: 1.51vw;
+    font-size: clamp(0.75rem, 1.51vw, 1.25rem);
+
+    font-weight: 200;
+    letter-spacing: 0.05rem;
+  }
+}
+
+.radio2 {
+  overflow: hidden;
 
   color: #ffffff;
   //  padding: 1em;
@@ -202,7 +243,7 @@ body {
   }
 
   &__label {
-    background-image: linear-gradient(to bottom, #068639, #046d79);
+    background-image: linear-gradient(to bottom, #0808e6, #100457);
     border-radius: 2rem;
     cursor: pointer;
     margin: 0 0.3rem;

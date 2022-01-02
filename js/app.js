@@ -67,7 +67,7 @@ const doProductFilter = function () {
     c("hello there Ultra Clean");
     c({ filteredProducts });
     filteredProductsL1 = filteredProducts.filter(function (el) {
-      return el.code.charAt(2) == "C";
+      return el.product == "C";
     });
     c({ filteredProducts });
     c({ filteredProductsL1 });
@@ -76,26 +76,26 @@ const doProductFilter = function () {
   } else if (filterProduct === "Ultimate Blend") {
     c("hello there Ultimate Blend");
     filteredProductsL1 = filteredProducts.filter(function (el) {
-      return el.code.charAt(1) == "U";
+      return el.product == "U";
     });
     //todo  122621.1044  Handle Euro Blend option
   } else if (filterProduct === "Euro Blend") {
     c("hello there Euro Blend");
     filteredProductsL1 = filteredProducts.filter(function (el) {
-      return el.code.charAt(1) == "E";
+      return el.product == "E";
     });
     //todo  122621.1044  Handle Expelit option
   } else if (filterProduct === "Expelit") {
     c("hello there Euro Blend");
     filteredProductsL1 = filteredProducts.filter(function (el) {
-      return el.code.charAt(1) == "E";
+      return el.product == "X";
     });
 
-    //todo  122621.1044  Handle Other option
-  } else if (filterProduct === "Other") {
+    //todo  122621.1044  Handle Misc option
+  } else if (filterProduct === "Misc") {
     c("hello there Other");
     filteredProductsL1 = filteredProducts.filter(function (el) {
-      return el.kind == "misc";
+      return el.product == "M";
     });
   }
 };
@@ -109,38 +109,38 @@ const doDistFilter = function () {
   } else if (filterDist === "USA") {
     c("hello there USA");
     filteredProductsL2 = filteredProductsL1.filter(function (el) {
-      return el.dist.charAt(0) == "z";
+      return el.dist == "Z";
     });
 
     //todo  122621.1044  Handle Agung option
   } else if (filterDist === "Agung") {
     c("hello there Agung");
     filteredProductsL2 = filteredProductsL1.filter(function (el) {
-      return el.dist.charAt(0) == "a";
+      return el.dist == "A";
     });
     //todo  122621.1044  Handle Kulu option
   } else if (filterDist === "Kulu") {
     c("hello there Kulu");
     filteredProductsL2 = filteredProductsL1.filter(function (el) {
-      return el.dist.charAt(0) == "k";
+      return el.dist == "K";
     });
     //todo  122621.1044  Handle La Cabra option
   } else if (filterDist === "La Cabra") {
     c("hello there La Cabra");
     filteredProductsL2 = filteredProductsL1.filter(function (el) {
-      return el.dist.charAt(0) == "l";
+      return el.dist == "L";
     });
     //todo  122621.1044  Handle Tangy option
   } else if (filterDist === "Tangy") {
     c("hello there Tangy");
     filteredProductsL2 = filteredProductsL1.filter(function (el) {
-      return el.dist.charAt(0) == "t" && el.dist.charAt(1) == "a";
+      return el.dist == "T";
     });
     //todo  122621.1044  Handle Thendro option
   } else if (filterDist === "Thendro") {
     c("hello there Thendro");
     filteredProductsL2 = filteredProductsL1.filter(function (el) {
-      return el.dist.charAt(0) == "t" && el.dist.charAt(1) == "h";
+      return el.dist == "O";
     });
   }
 };

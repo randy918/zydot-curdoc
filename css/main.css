@@ -66,7 +66,7 @@ h3 {
 }
 
 body {
-  background: #37424c;
+  background: #202125;
   font-family: "Overpass", sans-serif;
   font-weight: 900;
   font-size: 30px;
@@ -141,8 +141,6 @@ body {
 
 .radio {
   overflow: hidden;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   color: #ffffff;
   text-decoration: none;
   text-align: center;
@@ -155,8 +153,8 @@ body {
 }
 
 .radio__input:hover + .radio__label {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#73e67a), to(#61cc4b));
-  background-image: linear-gradient(to bottom, #73e67a, #61cc4b);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ed4509), to(#f04747));
+  background-image: linear-gradient(to bottom, #ed4509, #f04747);
   color: black;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -168,8 +166,47 @@ body {
 }
 
 .radio__label {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#068639), to(#046d79));
-  background-image: linear-gradient(to bottom, #068639, #046d79);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e60808), to(#570410));
+  background-image: linear-gradient(to bottom, #e60808, #570410);
+  border-radius: 2rem;
+  cursor: pointer;
+  margin: 0 0.3rem;
+  padding: 0.25em 1.02em;
+  font-family: Arial;
+  font-size: clamp(0.75rem, 1.51vw, 1.25rem);
+  font-weight: 200;
+  letter-spacing: 0.05rem;
+}
+
+.radio2 {
+  overflow: hidden;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 1rem;
+}
+
+.radio2__input {
+  display: none;
+}
+
+.radio2__input:hover + .radio2__label {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#73e67a), to(#61cc4b));
+  background-image: linear-gradient(to bottom, #73e67a, #61cc4b);
+  color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.radio2__input:checked + .radio2__label {
+  background: white;
+  color: black;
+}
+
+.radio2__label {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0808e6), to(#100457));
+  background-image: linear-gradient(to bottom, #0808e6, #100457);
   border-radius: 2rem;
   cursor: pointer;
   margin: 0 0.3rem;
