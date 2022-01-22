@@ -611,19 +611,19 @@ zydot = [
    "new": false, 
  }, 
  {
-   "row": 42,
-   "date": "March 17, 2021",
-   "title": "Zydot 2021 Price List",
+   "row": "NEW 42",
+   "date": "January 18, 2022",
+   "title": "Zydot 2022 Price List",
    "country": "USA",
-   "code": "ZPRICELST",
-   "datecode": 31721,
+   "code": "ZPRICELIST",
+   "datecode": 11822,
    "product": "M",
    "pdf": "y",
    "printer": ".pdf",
    "kind": "misc",
    "flavor": "0",
    "dist": "Z", 
-   "new": false, 
+   "new": true, 
  }
 
 ]
