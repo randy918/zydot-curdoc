@@ -1,7 +1,7 @@
 zydot = [
   
  {
-   "row": "NEW 1",
+   "row": "1",
    "date": "December 29, 2021",
    "title": "Expelit USA",
    "country": "USA",
@@ -13,7 +13,7 @@ zydot = [
    "kind": "expelit",
    "flavor": "t",
    "dist": "Z", 
-   "new": true, 
+   "new": false, 
  },
  {
    "row": 2,
@@ -521,7 +521,23 @@ zydot = [
    "new": false, 
  },
  {
-   "row": 36,
+   "row": "NEW 36",
+   "date": "March 2, 2022",
+   "title": "Zydot Ultra Clean 3-Up Instructions Spanish",
+   "country": "Spanish",
+   "code": "ZUCINSTS",
+   "datecode": 30222,
+   "product": "C",
+   "pdf": "y",
+   "printer": ".3-up.pdf",
+   "kind": "ultraclean",
+   "flavor": "0",
+   "dist": "Z", 
+   "new": true, 
+ },
+
+ {
+   "row": 37,
    "date": "September 14, 2021",
    "title": "Kulu Ultra Clean Box Germany",
    "country": "Germany",
@@ -536,7 +552,7 @@ zydot = [
    "new": false, 
  },
  {
-   "row": 37,
+   "row": 38,
    "date": "November 4, 2021",
    "title": "Kulu Ultra Clean Packets Germany",
    "country": "Germany",
@@ -551,7 +567,7 @@ zydot = [
    "new": false, 
  },
  {
-   "row": 38,
+   "row": 39,
    "date": "April 20, 2017",
    "title": "Kulu Ultra Clean 3-Up Instructions Germany",
    "country": "Germany",
@@ -566,7 +582,7 @@ zydot = [
    "new": false, 
  }, 
  {
-   "row": 39,
+   "row": 40,
    "date": "August 26, 2021",
    "title": "Ultra Clean Display",
    "country": "English",
@@ -581,7 +597,7 @@ zydot = [
    "new": false, 
  }, 
  {
-   "row": 40,
+   "row": 41,
    "date": "November 11, 2021",
    "title": "Zydot Logo 3-Inch Wide Curved",
    "country": "USA",
@@ -596,7 +612,7 @@ zydot = [
    "new": false, 
  }, 
  {
-   "row": 41,
+   "row": 42,
    "date": "January 2, 2022",
    "title": "Zydot Logo Lighter",
    "country": "USA",
@@ -611,7 +627,7 @@ zydot = [
    "new": false, 
  }, 
  {
-   "row": "NEW 42",
+   "row": "43",
    "date": "January 18, 2022",
    "title": "Zydot 2022 Price List",
    "country": "USA",
@@ -623,7 +639,7 @@ zydot = [
    "kind": "misc",
    "flavor": "0",
    "dist": "Z", 
-   "new": true, 
+   "new": false, 
  }
 
 ]
