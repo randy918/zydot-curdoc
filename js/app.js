@@ -333,4 +333,3 @@ window.onload = function () {
   document.querySelector("#myRadio1").checked = true;
   document.querySelector("#myRadio9").checked = true;
 };
-n;
