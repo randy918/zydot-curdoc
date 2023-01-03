@@ -602,7 +602,7 @@ zydot = [
     new: false,
   },
   {
-    row: "NEW 41",
+    row: "NEW 4",
     date: "August 8, 2005",
     title: "Ultra Clean Ingredient List",
     country: "USA",

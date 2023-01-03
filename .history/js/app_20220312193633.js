@@ -259,6 +259,13 @@ document.querySelector("#myRadio6").addEventListener("click", function () {
   visualizeFilteredProducts();
 });
 
+document.querySelector("#myRadio7").addEventListener("click", function () {
+  //todo 122621.1106    Set EXPElIT
+  filterProduct = "Expelit";
+  doFilters();
+  visualizeFilteredProducts();
+});
+
 document.querySelector("#myRadio8").addEventListener("click", function () {
   //todo 122621.1106    Set MISC
   filterProduct = "Misc";
