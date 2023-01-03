@@ -487,7 +487,7 @@ zydot = [
     title: "Zydot 2023 Price List",
     country: "USA",
     code: "ZPRICELIST",
-    datecode: 10323,
+    datecode: 10,
     product: "M",
     pdf: "y",
     printer: ".pdf",
