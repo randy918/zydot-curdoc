@@ -438,7 +438,7 @@ zydot = [
 
 
   {
-    row: 30,
+    row: 31,
     date: "November 11, 2021",
     title: "Zydot Logo 3-Inch Wide Curved",
     country: "USA",
@@ -453,7 +453,7 @@ zydot = [
     new: false,
   },
   {
-    row: 31,
+    row: 32,
     date: "January 2, 2022",
     title: "Zydot Logo Lighter",
     country: "USA",
@@ -468,12 +468,12 @@ zydot = [
     new: false,
   },
   {
-    row: "32",
+    row: "33",
     date: "January 3, 2022",
     title: "Zydot 2023 Price List",
     country: "USA",
     code: "ZPRICELIST",
-    datecode: 10523,
+    datecode: 10323,
     product: "M",
     pdf: "y",
     printer: ".pdf",
